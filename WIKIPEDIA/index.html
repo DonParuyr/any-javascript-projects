@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia</title>
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="background.js"></script>
+</head>
+<body>
+
+    <div class="lang">
+        <div id="eng"> <iconify-icon icon="emojione-v1:flag-for-united-states"></iconify-icon> </div>
+        <div id="rus"> <iconify-icon icon="twemoji:flag-for-russia"></iconify-icon> </div>
+    </div>
+
+    <div class="theme">
+        <div id="black" class="theme_size" onclick="blackTheme()">White</div>
+        <div id="white" class="theme_size" onclick="whiteTheme()">Black</div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>don</h1>
+            <h2>search</h2>
+            <form class="search-box">
+                <input type="search" placeholder="Your prompt">
+            </form>
+            <p></p>
+        </header>
+        <div class="results"></div>
+        <div class="person">by <a href="https://github.com/DonParuyr">@DonParuyr</a></div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
