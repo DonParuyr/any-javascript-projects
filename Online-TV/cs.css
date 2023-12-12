@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100;12..72,200;12..72,300;12..72,400;12..72,500;12..72,600;12..72,700;12..72,800;12..72,900&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family: Truculenta;
+}
+body{
+  min-height: 100vh;
+  font-size: 20px;
+  /* background-color: #131313; */
+}
+
+/*личные загатовки */
+button{
+  background: none;
+  border: 0;
+  transition: filter 0.3s ease;
+  cursor: pointer;
+}
+button:hover{
+  filter: brightness(70%);
+}
+.flex{
+  display: flex;
+  align-items: center;
+}
+.space-between{justify-content: space-between};
+
+/* контейнер 1 */
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #AB0606;
+}
+/* шапка */
+  .header{
+    background-color: black;
+    width: 100%;
+    color: white;
+  }
+    .padding{
+      margin: 0 auto;
+      width: 1440px;
+      padding-inline: 95px;
+    }
+      .header__left{
+        display: flex;
+        padding: 26px 0px 25px 0px;
+        justify-content: center;
+        align-items: center;
+        gap: 109px;
+        flex-shrink: 0;
+      }
+        .header__left img{
+          width: 59px;
+          height: 49px;
+          flex-shrink: 0;
+        }
+        .header__bar{
+          display: flex;
+          height: 33px;
+          gap: 79px;
+          flex-shrink: 0;
+
+          /* txt */
+          font-size: 24px;
+          font-weight: 300;
+          text-align: center;
+          color: #585858;
+          transition: color 0.3s ease;
+        }
+        .header__bar > li{
+          cursor: pointer;
+        }
+        .header__bar > li:hover{
+          color: white;
+        }
+      .header__right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 14px;
+        flex-shrink: 0;
+      } 
+        /* кнопка subscription*/
+        .header__right button.subscription{
+          display: flex;
+          height: 33px;
+          padding-inline: 17px;
+          justify-content: center;
+          align-items: center;
+
+          /* style */
+          border-radius: 157px;
+          background: #F2F2F2;
+          text-transform: uppercase;
+
+          /* txt */
+          color: #000;
+          text-align: center;
+          font-family: Truculenta;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: normal;
+        }
+        /* кнопка sign_in */
+        .header__right button.sign_in{
+          display: flex;
+          height: 33px;
+          padding-inline: 26px;
+          justify-content: center;
+          align-items: center;
+
+          /* style */
+          border-radius: 157px;
+          background: #B10000;
+          text-transform: uppercase;
+          /* txt */
+          color: #000;
+          text-align: center;
+          font-family: Truculenta;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: normal;
+        }
+
+/* main */
+.main{
+  display: flex;
+  background: #AB0606;
+  height: 818px;
+  align-items: flex-end;
+}
+.screen__img{
+  display: flex;
+  align-items: flex-end;
+  width: 522px;
+  height: 818px;
+}
+.main img{
+  width: 522px;
+}
+  .main__left {
+    width: 604px;
+    height: 480px;
+
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+    .main__left h1{
+      color: #FFF;
+      text-shadow: 0px 5px 0px rgba(0, 0, 0, 0.25);
+      font-family: Truculenta;
+      font-size: 126px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 111.895%; /* 140.988px */
+    }
+    .main__left .title p{
+      width: 604px;
+      height: 200px;
+
+      color: #FFF;
+      text-align: justify;
+      font-family: Truculenta;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 111.895%; /* 22.379px */
+    }
+    .main .buttons{
+      display: flex;
+      gap: 14px;
+    }
+    .buttons button{
+      color: white;
+      padding: 10px 20px;
+    }
+      .buttons > button{
+        display: flex;
+        border-radius: 18px;
+        font-size: 32px;
+        align-items: center;
+      }
+      .buttons .play{
+        gap: 1px;
+        background: black;
+      }
+      .buttons button.play:hover{
+        transform: scale(110%);
+      }
+      .buttons .more_info{
+        gap: 6px;
+        background: rgba(0, 0, 0, 0.40);
+      }
+      .buttons__description{
+        color: #000;
+        margin-top: 8px;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 111.895%; /* 24.617px */        
+      }
+      
+
+
+.footer{
+  background-color: black;
+  height: 106px;
+  width: 100%;
+  padding-block: 35px;
+  color: white;
+}
+  .footer .padding > ul{
+    gap: 41px;
+    display: flex;
+  } 
+  .footer__text > a{
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+
+    text-decoration: none;
+    cursor: pointer;
+  }
+    .footer__text > a:hover{
+      color: white;
+      font-weight: 500;
+      text-decoration:underline;
+    }

@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    background: rgb(147 62 62);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    transition: background 0.3s ease;
+}
+    .iphone{   
+        border: 8px solid #fafafa; 
+        border-radius: 114px; 
+        overflow: hidden;  user-select: none;
+    }
+
+    .phone{
+        border: 16px solid rgb(0, 0, 0);
+        border-radius: 107px;
+        overflow: hidden;
+    }
+        .theme{
+            position: absolute;
+            padding-left: 40px;   
+            padding-top: 5px;     
+        }
+    input[type=checkbox]{
+        height: 0;
+        width: 0;
+        visibility: hidden;
+    }
+    
+    label {
+        cursor: pointer;
+        text-indent: -9999px;
+        width: 100px;
+        height: 50px;
+        background: #b94949;
+        display: block;
+        border-radius: 100px;
+        position: relative;
+    }
+    
+    label:after {
+        content: url('https://api.iconify.design/ri/moon-fill.svg?color=red');
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 40px;
+        height: 40px;
+        background: #ffffff;
+        border-radius: 90px;
+        transition: 0.3s;
+    }
+    
+    input:checked + label {
+        background: black;
+    }
+    
+    input:checked + label:after {
+        background: #ffffff;
+        left: calc(100% - 5px);
+        transform: translateX(-100%);
+    }
+    
+    label:active:after {   /*  анимация нажатия чтоб ползунок чуть удлинился*/
+        width: 60px;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+        .screen{
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+            .line{
+                position: absolute;
+                margin-top: 20px;
+                background: rgb(0, 0, 0);
+                padding-top: 10px;
+                width: 300px;
+                height: 60px;
+                border-radius: 50px;
+
+                transition: all 0.3s;
+            }
+            .line:hover{
+                transform: scale(110%);
+                cursor: pointer;
+            }
+            .line:active{
+                border-radius: 85px;
+                width: 540px;
+                height: 253px;
+                box-shadow: 0px 2px 17px 5px #00000046;
+            }
+            nav{
+                color: white;
+                gap: 10px;
+                min-height: 1220px;
+                width: 608px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 20px 0px 20px;
+            }
+            nav h1{
+                padding-top: 100px;
+            }
+
+            .list_menu{
+                display: flex;
+                flex-direction: column;
+                justify-content: baseline;
+                width: 100%;
+                gap: 10px;
+            }
+                .drinks{
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                    gap: 10px;
+                }
+                    .drinks > ul{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        text-transform: uppercase;
+                        gap: 10px;
+                        padding: 20px;
+                        
+                        width: 100%;
+                        border-radius: 10px;
+                        transition: transform 0.3s, background 0.3s ;
+                        overflow: hidden;
+                    }
+                    .drinks > ul:hover{
+                        transform: scale(103%);
+                        background-color: #39393910;
+                    }
+                    .product{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 5px 10px;
+                        gap: 10px;
+                        width: 100%;
+                        border-radius: 15px;
+                        transition: 0.3s ease;
+                    }
+                        .product:hover{
+                            background: #3939391e;
+                        }
+                        .product > li {
+                            width: 100%;
+                            text-transform: uppercase;
+                            font-weight: 300;
+                        }
+                        .product_li{
+                            
+                        }
+                    .border{
+                        padding: 10px;
+                        border: 1px solid white;
+                        border-style: dashed;
+                    }
+            button{
+                background-color: #fff;
+                border: 6px solid white;
+                border-radius: 50px;
+                width: 50px;
+                height: 50px;
+                transition: box-shadow 0.3s ease;
+            }
+                button:hover{
+                    box-shadow: 0px 2px 0px 1px #00000087;
+                    cursor: pointer;
+                }
+                button:active{
+                    filter: brightness(80%);
+                    cursor: pointer;
+                }
+            .pay{
+                width: 100%;
+                color:black;
+                display: flex;
+                height: 100px;
+                font-size: 40px;
+                text-transform: uppercase;
+                gap: 20px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 130px 130px 0px 0px;
+                background-color: #fff;
+            }
+            .pay{
+                cursor: pointer;
+                transition: all 0.6s ease;
+            }
+            .pay:hover{
+                height: 150px;
+            }
+                #result{
+                    /* transition: all 1s; */
+                }
+
+
+
+
+
+
+
+
